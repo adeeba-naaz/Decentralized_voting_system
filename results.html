@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">  
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+body, html {font-family: "Raleway", sans-serif; height: 100%}
+p {font-size: 300%}
+</style>
+</head>
+<body>
+
+<center>
+<p>Results</p>
+
+<table>
+  <tr>
+    <th>Candidate ID</th>
+    <th>Candidate</th>
+    <th>Votes</th>
+  </tr>
+  {% for ele in result %}
+    <tr>
+      <td> 1</td>
+      <td>Candidate 1</td>
+      <td>1</td>
+    </tr>
+  <!-- {% endfor%}
+  <tr>
+    <th>Candidate ID</th>
+    <th>Candidate</th>
+    <th>Votes</th>
+  </tr> -->
+  {% for ele in result %}
+    <tr>
+      <td> 2</td>
+      <td>Candidate 2</td>
+      <td>0</td>
+    </tr>
+  {% endfor%}
+  {% for ele in result %}
+    <tr>
+      <td>3</td>
+      <td>Candidate 3</td>
+      <td>0</td>
+    </tr>
+  {% endfor%}
+  {% for ele in result %}
+    <tr>
+      <td>4</td>
+      <td>Candidate 4</td>
+      <td>0</td>
+    </tr>
+  {% endfor%}
+</table>
+</center>
+</body>
+</html>
